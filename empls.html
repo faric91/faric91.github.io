@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>project</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="container-fluid header_container">
+            <nav class="navbar navbar-default navbar-static-top">
+                <div class="container">
+                    <div class="navbar-header"><a class="navbar-brand navbar-link" href="index.html"><i class="fa fa-pagelines"></i></a>
+                        <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+                    </div>
+                    <div class="collapse navbar-collapse" id="navcol-1">
+                        <ul class="nav navbar-nav">
+                            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false" href="#">Справочники <span class="caret"></span></a>
+                                <ul class="dropdown-menu" role="menu">
+                                    <li role="presentation"><a href="empls.html">Сотрудники </a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false" href="#">Складской учет<span class="caret"></span></a>
+                                <ul class="dropdown-menu" role="menu">
+                                    <li role="presentation"><a href="stockroom.comin-goods.html">Поступление товара</a></li>
+                                    <li role="presentation"><a href="stockroom.shipment-goods.html">Отгрузка товара</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false" href="#">Финансовый учет<span class="caret"></span></a>
+                                <ul class="dropdown-menu" role="menu">
+                                    <li role="presentation"><a href="#">Состояние р/с</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false" href="#">Аналитика <span class="caret"></span></a>
+                                <ul class="dropdown-menu" role="menu"></ul>
+                            </li>
+                            <li role="presentation"><a href="#">Third Item</a></li>
+                        </ul>
+                        <ul class="nav navbar-nav navbar-right">
+                            <li role="presentation"><a href="login.html">Выйти <i class="fa fa-sign-out"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <section id="app">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1 class="page_title">Список сотрудников</h1></div>
+            </div>
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="table-responsive">
+                                <table class="table table-striped table-hover">
+                                    <thead>
+                                        <tr>
+                                            <th>ФИО </th>
+                                            <th>Офис </th>
+                                            <th>Категория </th>
+                                            <th> </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Петров Петр Петрович</td>
+                                            <td>Москва </td>
+                                            <td>Инструктор </td>
+                                            <td>
+                                                <button class="btn btn-default btn-xs" type="button"><i class="fa fa-edit"></i></button>
+                                                <button class="btn btn-primary btn-xs" type="button"><i class="fa fa-remove"></i></button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Иванов Иван Иванович</td>
+                                            <td>Минск </td>
+                                            <td>Дистрибьютер </td>
+                                            <td>
+                                                <button class="btn btn-default btn-xs" type="button"><i class="fa fa-edit"></i></button>
+                                                <button class="btn btn-primary btn-xs" type="button"><i class="fa fa-remove"></i></button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Сидоров Сидор Сидорович</td>
+                                            <td>Сантк-Петербург </td>
+                                            <td>Инструктор </td>
+                                            <td>
+                                                <button class="btn btn-default btn-xs" type="button"><i class="fa fa-edit"></i></button>
+                                                <button class="btn btn-primary btn-xs" type="button"><i class="fa fa-remove"></i></button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Петров Петр Петрович </td>
+                                            <td>Сантк-Петербург </td>
+                                            <td>Инструктор </td>
+                                            <td>
+                                                <button class="btn btn-default btn-xs" type="button"><i class="fa fa-edit"></i></button>
+                                                <button class="btn btn-primary btn-xs" type="button"><i class="fa fa-remove"></i></button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Иванов Иван Иванович </td>
+                                            <td>Сантк-Петербург </td>
+                                            <td>Дистрибьютер </td>
+                                            <td>
+                                                <button class="btn btn-default btn-xs" type="button"><i class="fa fa-edit"></i></button>
+                                                <button class="btn btn-primary btn-xs" type="button"><i class="fa fa-remove"></i></button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Петров Петр Петрович </td>
+                                            <td>Минск </td>
+                                            <td>Инструктор </td>
+                                            <td>
+                                                <button class="btn btn-default btn-xs" type="button"><i class="fa fa-edit"></i></button>
+                                                <button class="btn btn-primary btn-xs" type="button"><i class="fa fa-remove"></i></button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Иванов Иван Иванович </td>
+                                            <td>Сантк-Петербург </td>
+                                            <td>Инструктор </td>
+                                            <td>
+                                                <button class="btn btn-default btn-xs" type="button"><i class="fa fa-edit"></i></button>
+                                                <button class="btn btn-primary btn-xs" type="button"><i class="fa fa-remove"></i></button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Сидоров Сидор Сидорович </td>
+                                            <td>Москва</td>
+                                            <td>Инструктор </td>
+                                            <td>
+                                                <button class="btn btn-default btn-xs" type="button"><i class="fa fa-edit"></i></button>
+                                                <button class="btn btn-primary btn-xs" type="button"><i class="fa fa-remove"></i></button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Петров Петр Петрович </td>
+                                            <td>Минск </td>
+                                            <td>Дистрибьютер </td>
+                                            <td>
+                                                <button class="btn btn-default btn-xs" type="button"><i class="fa fa-edit"></i></button>
+                                                <button class="btn btn-primary btn-xs" type="button"><i class="fa fa-remove"></i></button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Сидоров Сидор Сидорович </td>
+                                            <td>Минск </td>
+                                            <td>Инструктор </td>
+                                            <td>
+                                                <button class="btn btn-default btn-xs" type="button"><i class="fa fa-edit"></i></button>
+                                                <button class="btn btn-primary btn-xs" type="button"><i class="fa fa-remove"></i></button>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="modal fade" role="dialog" tabindex="-1" id="modal_add_new">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                                            <h4 class="modal-title">Modal Title</h4></div>
+                                        <div class="modal-body">
+                                            <p>The content of your modal.</p>
+                                            <ul class="list-group">
+                                                <li class="list-group-item">
+                                                    <label for="fio">Label</label>
+                                                    <input class="input-sm" type="text" id="fio">
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <label for="office">Label</label>
+                                                    <input class="input-sm" type="text" id="office">
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <label for="category">Label</label>
+                                                    <input class="input-sm" type="text" id="category">
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button class="btn btn-default" type="button" data-dismiss="modal">Close</button>
+                                            <button class="btn btn-primary" type="button">Save</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3">
+                            <nav>
+                                <ul class="pagination pagination-sm">
+                                    <li><a aria-label="Previous"><span aria-hidden="true">«</span></a></li>
+                                    <li><a>1</a></li>
+                                    <li><a>2</a></li>
+                                    <li><a>3</a></li>
+                                    <li><a aria-label="Next"><span aria-hidden="true">»</span></a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="col-md-3 col-md-offset-6">
+                            <button class="btn btn-primary" type="button" id="btn_add_new">Новый сотрудник</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">Дополнительная информация</h3></div>
+                        <div class="panel-body">
+                            <ul class="list-group">
+                                <li class="list-group-item">
+                                    <div class="form-group">
+                                        <label class="control-label" for="passport">Паспорт :</label>
+                                        <h6>Паспорт Петрова</h6></div>
+                                </li>
+                                <li class="list-group-item">
+                                    <div class="form-group">
+                                        <label class="control-label" for="passport">Место рождение:</label>
+                                        <h6>Место рождение Петрова</h6></div>
+                                </li>
+                                <li class="list-group-item">
+                                    <div class="form-group">
+                                        <label class="control-label" for="passport">Прописка:</label>
+                                        <h6>Прописка Петрова</h6></div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <p class="text-center">Company@ </p>
+        </div>
+    </footer>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/index.js"></script>
+    <script src="assets/js/empls.js"></script>
+    <script src="assets/js/vue.js"></script>
+    <script src="assets/js/empls_vue.js"></script>
+    <script src="assets/js/stockroom.shipment-goods.js"></script>
+</body>
+
+</html>

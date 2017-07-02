@@ -1,0 +1,78 @@
+span.label.label-default{
+  font-size:90%;
+}
+
+input{
+  width:auto;
+}
+
+label.control-label{
+  display:initial;
+}
+
+p.p_title{
+  margin-bottom:3px;
+}
+
+h4{
+  margin-top:3px;
+}
+
+li.list-group-item{
+  padding-bottom:5px;
+}
+
+div.btn-group.btn-group-xs{
+  margin-bottom:5px;
+}
+
+hr{
+  margin:5px;
+  border-top-color:rgba(115,115,115,1);
+}
+
+h1.page_title{
+  margin-top:5px;
+}
+
+div.header_container{
+  padding:0;
+}
+
+input.input-sm{
+  width:100%;
+}
+
+ul.dropdown-menu{
+  height:auto;
+  max-height:200px;
+  overflow-x:hidden;
+}
+
+div#login-main{
+  display:inline-block;
+  vertical-align:middle;
+  margin-top:50px;
+  height:100%;
+}
+
+div > .fa.fa-pagelines{
+  font-size:75px;
+}
+
+div#logo{
+  margin-bottom:10px;
+}
+
+div#back-color{
+  background-color:rgb(27,29,33);
+}
+
+div#main{
+  margin-top:5px;
+}
+
+div.form-row{
+  margin-top:5px;
+}
+

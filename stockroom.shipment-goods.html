@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>project</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="container-fluid header_container">
+            <nav class="navbar navbar-default navbar-static-top">
+                <div class="container">
+                    <div class="navbar-header"><a class="navbar-brand navbar-link" href="index.html"><i class="fa fa-pagelines"></i></a>
+                        <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+                    </div>
+                    <div class="collapse navbar-collapse" id="navcol-1">
+                        <ul class="nav navbar-nav">
+                            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false" href="#">Справочники <span class="caret"></span></a>
+                                <ul class="dropdown-menu" role="menu">
+                                    <li role="presentation"><a href="empls.html">Сотрудники </a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false" href="#">Складской учет<span class="caret"></span></a>
+                                <ul class="dropdown-menu" role="menu">
+                                    <li role="presentation"><a href="stockroom.comin-goods.html">Поступление товара</a></li>
+                                    <li role="presentation"><a href="stockroom.shipment-goods.html">Отгрузка товара</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false" href="#">Финансовый учет<span class="caret"></span></a>
+                                <ul class="dropdown-menu" role="menu">
+                                    <li role="presentation"><a href="#">Состояние р/с</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false" href="#">Аналитика <span class="caret"></span></a>
+                                <ul class="dropdown-menu" role="menu"></ul>
+                            </li>
+                            <li role="presentation"><a href="#">Third Item</a></li>
+                        </ul>
+                        <ul class="nav navbar-nav navbar-right">
+                            <li role="presentation"><a href="login.html">Выйти <i class="fa fa-sign-out"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1 class="page_title">Отгрузка товара со склада</h1></div>
+            </div>
+            <div class="row">
+                <div class="col-md-9">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">Поиск товара</h3></div>
+                        <div class="panel-body">
+                            <div class="row form-row">
+                                <div class="col-md-3">
+                                    <p class="text-right"><strong>Товар :</strong></p>
+                                </div>
+                                <div class="col-md-9">
+                                    <div class="input-group">
+                                        <input class="input-sm form-control" type="text" readonly=""><span class="input-group-btn"><button class="btn btn-default btn-sm" type="button" id="btn-open-modal-search-batch-goods">... </button></span></div>
+                                </div>
+                            </div>
+                            <div class="row form-row">
+                                <div class="col-md-3">
+                                    <p class="text-right"><strong>Получатель:</strong> </p>
+                                </div>
+                                <div class="col-md-9">
+                                    <select class="input-sm form-control">
+                                        <optgroup label="This is a group">
+                                            <option value="12" selected="">This is item 1</option>
+                                            <option value="13">This is item 2</option>
+                                            <option value="14">This is item 3</option>
+                                        </optgroup>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row form-row">
+                                <div class="col-md-3">
+                                    <p class="text-right"><strong>Количество: </strong></p>
+                                </div>
+                                <div class="col-md-9">
+                                    <input class="input-sm" type="number">
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="row">
+                                <div class="col-md-3 col-md-offset-9">
+                                    <button class="btn btn-primary btn-sm btn-block" type="button">Добавить <i class="fa fa-plus"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">Общая информация</h3></div>
+                        <div class="panel-body"><span>Panel Body</span></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <h4>Список товаров на отгрузку</h4>
+                    <div class="btn-group btn-group-xs" role="group">
+                        <button class="btn btn-primary" type="button"><i class="glyphicon glyphicon-refresh"></i></button>
+                        <button class="btn btn-primary" type="button"><i class="glyphicon glyphicon-calendar"></i></button>
+                        <button class="btn btn-primary" type="button"><i class="fa fa-list"></i></button>
+                    </div>
+                    <div class="table-responsive">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>Наименование товара</th>
+                                    <th>Номер партии</th>
+                                    <th>Количество </th>
+                                    <th>Получатель </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Алиса в стране чудес</td>
+                                    <td>К001 </td>
+                                    <td>5 </td>
+                                    <td>Офис - Пинск</td>
+                                </tr>
+                                <tr>
+                                    <td>Алиса в стране чудес</td>
+                                    <td>К001 </td>
+                                    <td>3</td>
+                                    <td>Головной офис - Москва</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container footer_container">
+            <hr>
+            <p class="text-center">Company@ </p>
+        </div>
+    </footer>
+    <div id="list-modal">
+        <div class="modal fade" role="dialog" tabindex="-1" id="modal-search-batch-goods">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                        <h4 class="modal-title">Поиск партии товара</h4></div>
+                    <div class="modal-body">
+                        <section>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <p>Наименование товара/партии</p>
+                                    <input type="text" class="form-control">
+                                    <button class="btn btn-default form-control" type="button">Найти </button>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <p>Результаты поиска</p>
+                                    <div class="table-responsive">
+                                        <table class="table">
+                                            <thead>
+                                                <tr>
+                                                    <th>Наименование товара</th>
+                                                    <th>Номер партии</th>
+                                                    <th>Количество </th>
+                                                    <th> </th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>Cell 1</td>
+                                                    <td>Cell 2</td>
+                                                    <td>Cell 3</td>
+                                                    <td>
+                                                        <button class="btn btn-primary btn-xs" type="button"><i class="fa fa-plus"></i></button>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Cell 3</td>
+                                                    <td>Cell 4</td>
+                                                    <td>Cell 3</td>
+                                                    <td>
+                                                        <button class="btn btn-primary btn-xs" type="button"><i class="fa fa-plus"></i></button>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-default" type="button" data-dismiss="modal">Закрыть </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/index.js"></script>
+    <script src="assets/js/empls.js"></script>
+    <script src="assets/js/vue.js"></script>
+    <script src="assets/js/empls_vue.js"></script>
+    <script src="assets/js/stockroom.shipment-goods.js"></script>
+</body>
+
+</html>
