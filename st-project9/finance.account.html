@@ -55,43 +55,50 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <h1 class="page_title">Отгрузка товара со склада</h1></div>
+                    <h1 class="page_title">Расчеты </h1></div>
             </div>
             <div class="row">
                 <div class="col-md-9">
                     <div class="panel panel-default">
                         <div class="panel-heading">
-                            <h3 class="panel-title">Поиск товара</h3></div>
+                            <h3 class="panel-title">Добавление товара</h3></div>
                         <div class="panel-body">
                             <div class="row form-row">
                                 <div class="col-md-3">
-                                    <p class="text-right"><strong>Товар :</strong></p>
+                                    <p class="text-right"><strong>Сумма:</strong> </p>
                                 </div>
                                 <div class="col-md-9">
-                                    <div class="input-group">
-                                        <input class="input-sm form-control" type="text" readonly=""><span class="input-group-btn"><button class="btn btn-default btn-sm" type="button" id="btn-open-modal-search-batch-goods">... </button></span></div>
+                                    <input class="input-sm form-control" type="text">
                                 </div>
                             </div>
                             <div class="row form-row">
                                 <div class="col-md-3">
-                                    <p class="text-right"><strong>Получатель:</strong> </p>
+                                    <p class="text-right"><strong>Кредитор :</strong> </p>
                                 </div>
                                 <div class="col-md-9">
                                     <select class="input-sm form-control">
                                         <optgroup label="This is a group">
-                                            <option value="12" selected="">This is item 1</option>
-                                            <option value="13">This is item 2</option>
-                                            <option value="14">This is item 3</option>
+                                            <option value="12" selected="">Головной офис - Москва</option>
+                                            <option value="13">Офис - Минск</option>
+                                            <option value="14">Офис - Пинск</option>
                                         </optgroup>
                                     </select>
                                 </div>
                             </div>
                             <div class="row form-row">
                                 <div class="col-md-3">
-                                    <p class="text-right"><strong>Количество: </strong></p>
+                                    <p class="text-right"><strong>Дата до:</strong> </p>
                                 </div>
                                 <div class="col-md-9">
                                     <input class="input-sm" type="number">
+                                </div>
+                            </div>
+                            <div class="row form-row">
+                                <div class="col-md-3">
+                                    <p class="text-right"><strong>Дата от:</strong> </p>
+                                </div>
+                                <div class="col-md-9">
+                                    <input class="input-sm form-control" type="date">
                                 </div>
                             </div>
                             <hr>
@@ -133,24 +140,27 @@
                         <table class="table">
                             <thead>
                                 <tr>
-                                    <th>Наименование товара</th>
-                                    <th>Номер партии</th>
-                                    <th>Количество </th>
-                                    <th>Получатель </th>
+                                    <th>Номер </th>
+                                    <th>Сумма </th>
+                                    <th>Кредитор </th>
+                                    <th>Дата до</th>
+                                    <th>Дата от</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td>Алиса в стране чудес</td>
-                                    <td>К001 </td>
-                                    <td>5 </td>
-                                    <td>Офис - Пинск</td>
+                                    <td>Cell 1</td>
+                                    <td>Cell 2</td>
+                                    <td>Cell 3</td>
+                                    <td>Cell 4</td>
+                                    <td>Cell 5</td>
                                 </tr>
                                 <tr>
-                                    <td>Алиса в стране чудес</td>
-                                    <td>К001 </td>
-                                    <td>3</td>
-                                    <td>Головной офис - Москва</td>
+                                    <td>Cell 3</td>
+                                    <td>Cell 4</td>
+                                    <td>Cell 3</td>
+                                    <td>Cell 4</td>
+                                    <td>Cell 5</td>
                                 </tr>
                             </tbody>
                         </table>
@@ -164,65 +174,6 @@
             <p class="text-center">Company@ </p>
         </div>
     </footer>
-    <div id="list-modal">
-        <div class="modal fade" role="dialog" tabindex="-1" id="modal-search-batch-goods">
-            <div class="modal-dialog modal-lg" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
-                        <h4 class="modal-title">Поиск партии товара</h4></div>
-                    <div class="modal-body">
-                        <section>
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <div class="input-group"><span class="input-group-addon">Поиск </span>
-                                        <input class="input-sm form-control" type="text" placeholder="Номер партии товара"><span class="input-group-btn">Text<button class="btn btn-primary btn-sm" type="button"> <i class="fa fa-search"></i></button></span></div>
-                                </div>
-                            </div>
-                            <div class="row form-row-2">
-                                <div class="col-md-12">
-                                    <p>Результаты поиска</p>
-                                    <div class="table-responsive">
-                                        <table class="table">
-                                            <thead>
-                                                <tr>
-                                                    <th>Наименование товара</th>
-                                                    <th>Номер партии</th>
-                                                    <th>Количество </th>
-                                                    <th> </th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td>Cell 1</td>
-                                                    <td>Cell 2</td>
-                                                    <td>Cell 3</td>
-                                                    <td>
-                                                        <button class="btn btn-primary btn-xs" type="button"><i class="fa fa-plus"></i></button>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Cell 3</td>
-                                                    <td>Cell 4</td>
-                                                    <td>Cell 3</td>
-                                                    <td>
-                                                        <button class="btn btn-primary btn-xs" type="button"><i class="fa fa-plus"></i></button>
-                                                    </td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
-                    </div>
-                    <div class="modal-footer">
-                        <button class="btn btn-default" type="button" data-dismiss="modal">Закрыть </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/js/index.js"></script>

@@ -22,7 +22,8 @@
                         <ul class="nav navbar-nav">
                             <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false" href="#">Справочники <span class="caret"></span></a>
                                 <ul class="dropdown-menu" role="menu">
-                                    <li role="presentation"><a href="empls.html">Сотрудники </a></li>
+                                    <li role="presentation"><a href="refbooks.empls.html">Сотрудники </a></li>
+                                    <li role="presentation"><a href="refbooks.goods.html">Товары </a></li>
                                 </ul>
                             </li>
                             <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false" href="#">Складской учет<span class="caret"></span></a>
@@ -33,7 +34,8 @@
                             </li>
                             <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false" href="#">Финансовый учет<span class="caret"></span></a>
                                 <ul class="dropdown-menu" role="menu">
-                                    <li role="presentation"><a href="#">Состояние р/с</a></li>
+                                    <li role="presentation"><a href="finance.account.html">Дебиторская задолженность</a></li>
+                                    <li role="presentation"><a href="#">Кредиторская задолженность</a></li>
                                 </ul>
                             </li>
                             <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false" href="#">Аналитика <span class="caret"></span></a>
@@ -137,12 +139,22 @@
             </div>
             <div class="row">
                 <div class="col-md-12">
-                    <h4>Список товаров</h4>
-                    <div class="btn-group btn-group-xs" role="group">
+                    <h4>Список товаров</h4></div>
+                <div class="col-md-6">
+                    <div class="btn-group btn-group-sm" role="group">
                         <button class="btn btn-primary" type="button"><i class="glyphicon glyphicon-refresh"></i></button>
                         <button class="btn btn-primary" type="button"><i class="glyphicon glyphicon-calendar"></i></button>
                         <button class="btn btn-primary" type="button"><i class="fa fa-list"></i></button>
                     </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="input-group"><span class="input-group-addon"> <i class="fa fa-search"></i></span>
+                        <input class="input-sm form-control" type="text" placeholder="Поиск по всем колонкам таблицы">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
                     <div class="table-responsive">
                         <table class="table">
                             <thead>
@@ -186,8 +198,7 @@
         </div>
     </section>
     <footer>
-        <div class="container footer_container">
-            <hr>
+        <div class="container">
             <p class="text-center">Company@ </p>
         </div>
     </footer>
@@ -197,17 +208,16 @@
                 <div class="modal-content">
                     <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
-                        <h4 class="modal-title">Поиск партии товара</h4></div>
+                        <h4 class="modal-title">Поиск товара</h4></div>
                     <div class="modal-body">
                         <section>
                             <div class="row">
                                 <div class="col-md-12">
-                                    <p>Наименование товара/партии</p>
-                                    <input type="text" class="form-control">
-                                    <button class="btn btn-default form-control" type="button">Найти </button>
+                                    <div class="input-group"><span class="input-group-addon">Поиск </span>
+                                        <input class="input-sm form-control" type="text" placeholder="Наименование товара"><span class="input-group-btn">Text<button class="btn btn-primary btn-sm" type="button"> <i class="fa fa-search"></i></button></span></div>
                                 </div>
                             </div>
-                            <div class="row">
+                            <div class="row form-row-2">
                                 <div class="col-md-12">
                                     <p>Результаты поиска</p>
                                     <div class="table-responsive">

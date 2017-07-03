@@ -1,5 +1,5 @@
 $(function(){
-    $("#btn_add_new").click(function(){
-        $("#modal_add_new").modal("show");
+    $("#btn-open-modal-add-new").click(function(){
+        $("#modal-add-new").modal("show");
     })
 })
